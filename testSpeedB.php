@@ -1,7 +1,5 @@
 <?php
 
-require_once __DIR__.'/myfgetcsv.php';
-
 $chunk = (int) $argv[1];
 $time_limit = (float) $argv[2];
 
@@ -16,7 +14,7 @@ $start = microtime(true);
 
 do {
     for ($i = 0; $i < $chunk; $i++) {
-        $d = myfgetcsv($f);
+        $d = fgetcsv($f);
         $count++;
     }
 
