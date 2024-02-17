@@ -1,5 +1,7 @@
 <?php
 
+require_once __DIR__.'/myfgetcsv.php';
+
 $chunk = (int) $argv[1];
 $time_limit = (float) $argv[2];
 
